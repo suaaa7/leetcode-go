@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestLengthOfLongestSubstring(t *testing.T) {
+func TestMyAtoi(t *testing.T) {
 	tests := []string{
 		"0",
 		"42",

@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestLengthOfLongestSubstring(t *testing.T) {
+func TestReverse(t *testing.T) {
 	tests := []int{
 		0,
 		123,

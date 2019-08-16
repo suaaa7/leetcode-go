@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestConvert(t *testing.T) {
 	tests := []string{
 		"PAYPALISHIRING",
 		"PAYPALISHIRING",
