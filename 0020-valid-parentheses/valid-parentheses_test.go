@@ -24,7 +24,7 @@ func TestIsValid(t *testing.T) {
 	}
 	for i := 0; i < len(tests); i++ {
 		actual := isValid(tests[i])
-		fmt.Printf("nums = %v\n", tests[i])
+		fmt.Printf("test = %v\n", tests[i])
 		if actual != expecteds[i] {
 			t.Fatalf("actual -> %v expected -> %v\n", actual, expecteds[i])
 		}

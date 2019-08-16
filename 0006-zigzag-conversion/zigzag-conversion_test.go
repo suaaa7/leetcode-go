@@ -23,7 +23,7 @@ func TestConvert(t *testing.T) {
 	}
 	for i := 0; i < len(tests); i++ {
 		actual := convert(tests[i], numRows[i])
-		fmt.Printf("nums = %v target = %v\n", tests[i], numRows[i])
+		fmt.Printf("test = %v numRows = %v\n", tests[i], numRows[i])
 		if actual != expecteds[i] {
 			t.Fatalf("actual -> %v expected -> %v\n", actual, expecteds[i])
 		}

@@ -26,7 +26,7 @@ func TestTwoSum(t *testing.T) {
 	}
 	for i := 0; i < len(targets); i++ {
 		actual := twoSum(tests[i], targets[i])
-		fmt.Printf("nums = %v target = %v\n", tests[i], targets[i])
+		fmt.Printf("test = %v target = %v\n", tests[i], targets[i])
 		if actual[0] != expecteds[i][0] && actual[1] != expecteds[i][1] {
 			t.Fatalf("actual -> %v expected -> %v\n", actual, expecteds[i])
 		}
