@@ -1,12 +1,11 @@
 package leetcode
 
 func generateParenthesis(n int) []string {
-	result := []string{}
-
 	if n == 0 {
-		return result
+		return []string{}
 	}
 
+	var result []string
 	findGP(n, n, "", &result)
 
     return result
