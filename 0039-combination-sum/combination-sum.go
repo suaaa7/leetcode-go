@@ -15,7 +15,7 @@ func combinationSum(candidates []int, target int) [][]int {
 	sort.Ints(candidates)
 	findCombinationSum(candidates, target, 0, comb, &result)
 
-    return result
+	return result
 }
 
 func findCombinationSum(
@@ -23,7 +23,7 @@ func findCombinationSum(
 	target, index int,
 	comb []int,
 	result *[][]int,
-	) {
+) {
 	if target < 0 {
 		return
 	}

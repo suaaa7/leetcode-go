@@ -10,7 +10,7 @@ func convert(s string, numRows int) string {
 	}
 
 	var result bytes.Buffer
-	pace := numRows * 2 - 2
+	pace := numRows*2 - 2
 
 	for i := 0; i < len(s); i += pace {
 		result.WriteByte(s[i])
@@ -27,9 +27,9 @@ func convert(s string, numRows int) string {
 		}
 	}
 
-	for i := numRows-1; i < len(s); i += pace {
+	for i := numRows - 1; i < len(s); i += pace {
 		result.WriteByte(s[i])
 	}
 
-    return result.String()
+	return result.String()
 }

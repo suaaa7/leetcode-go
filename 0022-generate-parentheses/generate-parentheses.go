@@ -8,7 +8,7 @@ func generateParenthesis(n int) []string {
 	var result []string
 	findGP(n, n, "", &result)
 
-    return result
+	return result
 }
 
 func findGP(lindex, rindex int, str string, result *[]string) {

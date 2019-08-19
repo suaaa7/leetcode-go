@@ -41,11 +41,11 @@ func convert(sign int, absStr string) int {
 	var abs int
 
 	for _, b := range absStr {
-		abs = abs * 10 + int(b-'0')
+		abs = abs*10 + int(b-'0')
 		switch {
-		case sign * abs > math.MaxInt32:
+		case sign*abs > math.MaxInt32:
 			return math.MaxInt32
-		case sign * abs < math.MinInt32:
+		case sign*abs < math.MinInt32:
 			return math.MinInt32
 		}
 	}

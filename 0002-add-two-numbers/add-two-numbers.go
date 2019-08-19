@@ -6,7 +6,7 @@ type ListNode struct {
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-    if l1 == nil || l2 == nil {
+	if l1 == nil || l2 == nil {
 		return nil
 	}
 	head := &ListNode{Val: 0, Next: nil}

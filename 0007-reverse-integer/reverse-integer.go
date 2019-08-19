@@ -15,7 +15,7 @@ func reverse(x int) int {
 
 	for x > 0 {
 		tmp := x % 10
-		result = result * 10 + tmp
+		result = result*10 + tmp
 		x = x / 10
 	}
 

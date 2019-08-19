@@ -2,8 +2,8 @@ package leetcode
 
 import (
 	"fmt"
-	"testing"
 	"reflect"
+	"testing"
 )
 
 func TestGenerateParentheses(t *testing.T) {
@@ -14,7 +14,7 @@ func TestGenerateParentheses(t *testing.T) {
 	}
 	expecteds := [][]string{
 		{},
-		{"()",},
+		{"()"},
 		{
 			"((()))",
 			"(()())",
@@ -28,8 +28,8 @@ func TestGenerateParentheses(t *testing.T) {
 		fmt.Printf("tests = %v\n", tests[i])
 		if !reflect.DeepEqual(actual, expecteds[i]) {
 			fmt.Printf(
-				"actual -> %v expected -> %v\n", 
-				reflect.TypeOf(actual), 
+				"actual -> %v expected -> %v\n",
+				reflect.TypeOf(actual),
 				reflect.TypeOf(expecteds[i]),
 			)
 			t.Fatalf("actual -> %v expected -> %v\n", actual, expecteds[i])

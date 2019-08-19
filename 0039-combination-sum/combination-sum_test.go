@@ -2,8 +2,8 @@ package leetcode
 
 import (
 	"fmt"
-	"testing"
 	"reflect"
+	"testing"
 )
 
 func TestCombinationSum(t *testing.T) {
