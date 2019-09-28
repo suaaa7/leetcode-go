@@ -1,10 +1,11 @@
 package leetcode
 
-type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
-}
+import (
+	"github.com/suaaa7/leetcode-go/tool"
+)
+
+// TreeNode has Val, Left and Right
+type TreeNode = tool.TreeNode
 
 func isSymmetric(root *TreeNode) bool {
 	return isMirror(root, root)
