@@ -8,8 +8,8 @@ type ListNode struct {
 	Next *ListNode
 }
 
-// Ints2ListNode convert []int to *ListNode
-func Ints2ListNode(nums []int) *ListNode {
+// Ints2List convert []int to *ListNode
+func Ints2List(nums []int) *ListNode {
 	result := &ListNode{}
 	tmp := result
 

@@ -23,7 +23,7 @@ func TestAddTwoNumbers(t *testing.T) {
 	}
 	for i := 0; i < len(tests1); i++ {
 		actual := tool.List2Ints(
-			addTwoNumbers(tool.Ints2ListNode(tests1[i]), tool.Ints2ListNode(tests2[i])))
+			addTwoNumbers(tool.Ints2List(tests1[i]), tool.Ints2List(tests2[i])))
 		fmt.Printf("test1 = %v test2 = %v\n", tests1[i], tests2[i])
 		if !reflect.DeepEqual(actual, expecteds[i]) {
 			t.Fatalf("actual -> %v expected -> %v\n", actual, expecteds[i])
