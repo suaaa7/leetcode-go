@@ -21,6 +21,28 @@ func Ints2List(nums []int) *ListNode {
 	return result.Next
 }
 
+// Ints2ListWithCycle convert []int to *ListNode with cycle
+func Ints2ListWithCycle(nums []int, pos int) *ListNode {
+	head := Ints2List(nums)
+	if pos == -1 {
+		return head
+	}
+
+	c := head
+	for pos > 0 {
+		c = c.Next
+		pos--
+	}
+
+	tail := c
+	for tail.Next != nil {
+		tail = tail.Next
+	}
+	tail.Next = c
+
+	return head
+}
+
 // List2Ints convert *listNode to []int
 func List2Ints(head *ListNode) []int {
 	var cnt int
